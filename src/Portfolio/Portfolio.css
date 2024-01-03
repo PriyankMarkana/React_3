@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style-type:none ;
+}
+ul{
+    margin-bottom: 0px !important;
+    padding: 0px !important;
+}
+
+
+/* ------banner start -----*/
+.Banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/page-title-bg.jpg');
+    position: relative;
+    z-index: -2;
+    color: white;
+}
+.Banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #030821;
+    opacity: 0.5;
+}
+.Banner .content{
+  width: 100%;
+  margin-top: 150px;
+}
+.Banner .content h2{
+    font-weight: 700;
+}
+.content .li::before{
+    content: '\2022';
+    margin: 0px 5px;
+}
+/* ---------banner end--------- */
+
+/* -------our_portfolio start----- */
+.our_portfolio{
+    padding: 100px 0px;
+}
+.our_portfolio .content h6{
+    color: #FF9800;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.our_portfolio .content h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.our_portfolio .content{
+    margin-bottom: 35px;
+}
+.our_portfolio .box{
+    position: relative;
+}
+.our_portfolio .box div{
+    visibility: hidden;
+    width: 90%;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    transition: .4s;
+    opacity: 0;
+}
+.our_portfolio .box:hover div{
+    top: 65%;
+    visibility: visible;
+    opacity: 1;
+}
+.our_portfolio .box h5{
+    font-weight: 700;
+    transform: translateX(50px);
+    transition: .6s;
+    opacity: 0;
+}
+.our_portfolio .box:hover h5{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.our_portfolio .box p{
+    font-weight: 600;
+    color: #7B68EE;
+    transform: translateX(-50px);
+    transition: .6s;
+    opacity: 0;
+}
+.our_portfolio .box:hover p{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.our_portfolio .center span{
+    padding: 12px 25px;
+    margin: 0px 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:rgba(94, 94, 94, 0.15) 0px 5px 15px 0px;
+    font-weight: 600;
+    transition: .4s;
+    margin-bottom: 7px;
+}
+.our_portfolio .center span:hover{
+    color: white;
+    background-color: #7B68EE;
+}
+/*------ our_portfolio start---- */

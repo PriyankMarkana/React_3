@@ -1,0 +1,73 @@
+.Banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/page-title-bg.jpg');
+    position: relative;
+    z-index: -2;
+    color: white;
+}
+.Banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #030821;
+    opacity: 0.5;
+}
+.Banner .content{
+  width: 100%;
+  margin-top: 150px;
+}
+.Banner .content h2{
+    font-weight: 700;
+}
+.content .li::before{
+    content: '\2022';
+    margin: 0px 5px;
+}
+
+/*-------- service start --------*/
+.service_detail{
+    padding: 100px 0px;
+  }
+  .service_detail .box{
+    padding: 30px 35px;
+    box-shadow: rgba(82, 90, 101, 0.12) 5px 7px 15px 2px; 
+    border-radius: 5px;
+    line-height: 28.8px;
+    margin-top: 30px;
+    transition: .7s;
+  }
+  .service_detail .box:hover{
+    margin-top: 20px;
+    background-color:#7B68EE;
+    color: white;
+  }
+  .service_detail .box i{
+    font-size: 50px;
+    color: #FF9800;
+  }
+  .service_detail .box h5{
+    margin-top: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .service_detail .box img{
+    height: 50px;
+    color: #FF9800 !important;
+    transition: .5s;
+  }
+  .service_detail .box:hover img{
+    transform: rotateY(180deg);
+    background-color: white !important;
+    border-radius: 6px;
+  }
+  .service_detail .box:hover cite{
+    color: white;
+  }
+  .service_detail .box:hover span{
+    color: white;
+  }
